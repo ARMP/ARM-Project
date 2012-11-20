@@ -61,6 +61,9 @@ extern void tcp_time_wait(struct sock *sk, int state, int timeo);
 #define MAX_TCP_WINDOW		32767U
 
 /* Offer an initial receive window of 10 mss. */
+#define TCP_DEFAULT_INIT_RCVWND  10
+
+/* Offer an initial receive window of 10 mss. */
 #define TCP_DEFAULT_INIT_RCVWND	10
 
 /* Minimal accepted MSS. It is (60+60+8) - (20+20). */
@@ -208,6 +211,9 @@ extern void tcp_time_wait(struct sock *sk, int state, int timeo);
 
 /* TCP thin-stream limits */
 #define TCP_THIN_LINEAR_RETRIES 6       /* After 6 linear retries, do exp. backoff */
+
+/* TCP initial congestion window */
+#define TCP_INIT_CWND    10
 
 /* TCP initial congestion window as per draft-hkchu-tcpm-initcwnd-01 */
 #define TCP_INIT_CWND		10
