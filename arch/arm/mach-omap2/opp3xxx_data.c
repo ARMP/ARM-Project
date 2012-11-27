@@ -173,8 +173,6 @@ static struct omap_opp_def __initdata omap36xx_opp_def_list[] = {
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  500000000, OMAP3630_VDD_MPU_OPP70_UV),
 	/* MPU OPP1 - OPP50 */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  600000000, OMAP3630_VDD_MPU_OPP85_UV),
-	/* MPU OPP2 - OPP100 */
-	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  700000000, OMAP3630_VDD_MPU_OPP100_UV),
 	/* MPU OPP3 - OPP-Turbo */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,
 				800000000, OMAP3630_VDD_MPU_OPP120_UV),
@@ -182,10 +180,7 @@ static struct omap_opp_def __initdata omap36xx_opp_def_list[] = {
      OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true, 900000000, OMAP3630_VDD_MPU_OPP900_UV),
 	/* MPU OPP4 - OPP-SB */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,
-				1000000000, OMAP3630_VDD_MPU_OPP11G_UV),
-	/* MPU OPP4 - OPP-SB */
-	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,
-				1100000000, OMAP3630_VDD_MPU_OPP1G_UV),
+				1000000000, OMAP3630_VDD_MPU_OPP1G_UV),
 	/* MPU OPP5 - OPP-SB */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,
 				1200000000, OMAP3630_VDD_MPU_OPP12G_UV),
