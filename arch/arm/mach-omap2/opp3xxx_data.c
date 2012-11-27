@@ -166,7 +166,7 @@ static struct omap_opp_def __initdata omap34xx_opp_def_list[] = {
 
 static struct omap_opp_def __initdata omap36xx_opp_def_list[] = {
 	/* MPU OPP1 - OPP20 */
-	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  200000000, OMAP3630_VDD_MPU_OPP65_UV),
+	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  300000000, OMAP3630_VDD_MPU_OPP65_UV),
 	/* MPU OPP1 - OPP50 */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,  400000000, OMAP3630_VDD_MPU_OPP50_UV),
 	/* MPU OPP1 - OPP50 */
