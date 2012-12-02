@@ -1,3 +1,9 @@
+	
+	ARM Project, A Modified Linux Kernel to bring about stability to Android.
+		Initialized By: Nicholas Chen
+		
+	This Release is compatible with: LG-P970, maguro(i9250)
+
 	Linux kernel release 3.x <http://kernel.org/>
 
 These are the release notes for Linux version 3.  Read them carefully,
