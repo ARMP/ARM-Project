@@ -27,7 +27,7 @@
 #include "omap3_voltages.h"
 
 #include <plat/common.h>
-struct omap_opp_def omap36xx_opp_def_list_shared[15];  /*shared*/
+struct omap_opp_def omap36xx_opp_def_list_shared[20];  /*shared*/
 
 /* 34xx */
 
@@ -98,6 +98,10 @@ struct omap_volt_data omap36xx_vddmpu_volt_data[] = {
 OMAP3630_CONTROL_FUSE_OPP1G_VDD1, 0xfa, 0x25, OMAP_ABB_NOMINAL_OPP),
 	VOLT_DATA_DEFINE(OMAP3630_VDD_MPU_OPP900_UV, 0,
 OMAP3630_CONTROL_FUSE_OPP1G_VDD1, 0xfa, 0x29, OMAP_ABB_NOMINAL_OPP),
+	VOLT_DATA_DEFINE(OMAP3630_VDD_MPU_OPP800_UV, 0,
+OMAP3630_CONTROL_FUSE_OPP1G_VDD1, 0xfa, 0x31, OMAP_ABB_NOMINAL_OPP),
+	VOLT_DATA_DEFINE(OMAP3630_VDD_MPU_OPP700_UV, 0,
+OMAP3630_CONTROL_FUSE_OPP1G_VDD1, 0xfa, 0x33, OMAP_ABB_NOMINAL_OPP),
 	VOLT_DATA_DEFINE(0, 0, 0, 0, 0, 0),
 };
 
@@ -160,11 +164,15 @@ static struct omap_opp_def __initdata omap36xx_opp_def_list[] = {
 	/* MPU OPP3 - OPP-Turbo */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,
 				600000000, OMAP3630_VDD_MPU_OPP120_UV),
+	/* MPU OPP700 */
+     OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true, 700000000, OMAP3630_VDD_MPU_OPP700_UV),
+	/* MPU OPP800 */
+     OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true, 800000000, OMAP3630_VDD_MPU_OPP800_UV),
 	/* MPU OPP900 */
      OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true, 900000000, OMAP3630_VDD_MPU_OPP900_UV),
 	/* MPU OPP4 - OPP-SB */
 	OPP_INITIALIZER("mpu", "dpll1_ck", "mpu_iva", true,
-				1000000000, OMAP3630_VDD_MPU_OPP1G_UV),
+				1100000000, OMAP3630_VDD_MPU_OPP1G_UV),
 
 /* S[, 2012.07.02, mannsik.chung@lge.com, Boost L3 clock. (TI patch by deepak.muddegowda@sasken.com) */
 #if 0
