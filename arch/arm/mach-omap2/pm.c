@@ -274,7 +274,7 @@ static ssize_t vdd_opp_store(struct kobject *kobj, struct kobj_attribute *attr,
 			
 			if (!strcmp("iva", omap36xx_opp_def_list_shared[i].hwmod_name))
 			{
-				if ((omap36xx_opp_def_list_shared[i].freq/1000) == value)
+				if ((omap36xx_opp_def_list_shared[i].freq/1400) == value)
 					break;
 				else
 					opp_id ++;
